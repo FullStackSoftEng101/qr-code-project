@@ -20,8 +20,9 @@ inquirer
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
-    const url = answers.URL;
 
+    console.log(answers);
+    const url = answers.URL;
     // var qr_svg = qr.image("I love QR!", { type: "svg" });
     var qr_svg = qr.image(url, { type: "png" });
     // qr_svg.pipe(require("fs").createWriteStream("i_love_qr.svg"));
